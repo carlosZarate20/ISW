@@ -292,4 +292,3 @@ C:\Users\operador\Desktop\Repositorios\MantenimientoCliente\MantenimientoCliente
 C:\Users\operador\Desktop\Repositorios\MantenimientoCliente\MantenimientoCliente\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\operador\Desktop\Repositorios\MantenimientoCliente\MantenimientoCliente\obj\Release\MantenimientoCliente.dll
 C:\Users\operador\Desktop\Repositorios\MantenimientoCliente\MantenimientoCliente\obj\Release\MantenimientoCliente.pdb
-C:\Users\operador\Desktop\Repositorios\MantenimientoCliente\MantenimientoCliente\obj\Release\MantenimientoCliente.csprojResolveAssemblyReference.cache

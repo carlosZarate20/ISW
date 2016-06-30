@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1030]C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Debug\MantenimientoClienteSeleniumRC.dll</TopNode>
+  <SelectedNode>[0-1016]MantenimientoClienteSeleniumRC.jEditarCancelar</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1030]C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Debug\MantenimientoClienteSeleniumRC.dll" Expanded="true" />
+    <Node UniqueName="[0-1031]MantenimientoClienteSeleniumRC" Expanded="true" />
+    <Node UniqueName="[0-1000]MantenimientoClienteSeleniumRC.aIniciarSesionCorrecto" Expanded="true" />
+    <Node UniqueName="[0-1002]MantenimientoClienteSeleniumRC.bLoginFail_UsuarioFaltante" Expanded="true" />
+    <Node UniqueName="[0-1004]MantenimientoClienteSeleniumRC.cLoginFail_CamposVacios" Expanded="true" />
+    <Node UniqueName="[0-1006]MantenimientoClienteSeleniumRC.dLoginFail_ContraseñaFaltante" Expanded="true" />
+    <Node UniqueName="[0-1008]MantenimientoClienteSeleniumRC.eRegistrar_Cancelar" Expanded="true" />
+    <Node UniqueName="[0-1010]MantenimientoClienteSeleniumRC.fRegistrarCamposVacios" Expanded="true" />
+    <Node UniqueName="[0-1012]MantenimientoClienteSeleniumRC.gRegistrarDatosInvalidos" Expanded="true" />
+    <Node UniqueName="[0-1014]MantenimientoClienteSeleniumRC.hRegistrarCorrecto" Expanded="true" />
+    <Node UniqueName="[0-1016]MantenimientoClienteSeleniumRC.jEditarCancelar" Expanded="true" />
+    <Node UniqueName="[0-1018]MantenimientoClienteSeleniumRC.kEditarCampoInvalido" Expanded="true" />
+    <Node UniqueName="[0-1020]MantenimientoClienteSeleniumRC.lEditarCampoVacio" Expanded="true" />
+    <Node UniqueName="[0-1022]MantenimientoClienteSeleniumRC.mEditarCorrecto" Expanded="true" />
+    <Node UniqueName="[0-1024]MantenimientoClienteSeleniumRC.nEliminarCancelar" Expanded="true" />
+    <Node UniqueName="[0-1026]MantenimientoClienteSeleniumRC.oEliminarCorrecto" Expanded="true" />
+    <Node UniqueName="[0-1028]MantenimientoClienteSeleniumRC.pLogOut" Expanded="true" />
+  </Nodes>
+</VisualState>

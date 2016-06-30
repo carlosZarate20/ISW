@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Debug\MantenimientoClienteSeleniumRC.dll" total="15" errors="4" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-06-30" time="18:18:39">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="WIN-1MLGRPI2I9O" user="operador" user-domain="WIN-1MLGRPI2I9O" />
+  <culture-info current-culture="es-PE" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Debug\MantenimientoClienteSeleniumRC.dll" executed="True" result="Failure" success="False" time="126.020" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="MantenimientoClienteSeleniumRC" executed="True" result="Failure" success="False" time="126.019" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="aIniciarSesionCorrecto" executed="True" result="Success" success="True" time="9.160" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.aIniciarSesionCorrecto.TheIniciarSesionCorrectoTest" executed="True" result="Success" success="True" time="9.155" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="bLoginFail_UsuarioFaltante" executed="True" result="Success" success="True" time="8.409" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.bLoginFail_UsuarioFaltante.TheLoginFail_UsuarioFaltanteTest" executed="True" result="Success" success="True" time="8.406" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="cLoginFail_CamposVacios" executed="True" result="Success" success="True" time="7.050" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.cLoginFail_CamposVacios.TheLoginFail_CamposVaciosTest" executed="True" result="Success" success="True" time="7.048" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="dLoginFail_ContraseñaFaltante" executed="True" result="Success" success="True" time="7.565" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.dLoginFail_ContraseñaFaltante.TheLoginFail_ContraseñaFaltanteTest" executed="True" result="Success" success="True" time="7.562" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="eRegistrar_Cancelar" executed="True" result="Success" success="True" time="10.088" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.eRegistrar_Cancelar.TheRegistrar_CancelarTest" executed="True" result="Success" success="True" time="10.084" asserts="5" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="fRegistrarCamposVacios" executed="True" result="Success" success="True" time="9.301" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.fRegistrarCamposVacios.TheRegistrarCamposVaciosTest" executed="True" result="Success" success="True" time="9.298" asserts="6" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="gRegistrarDatosInvalidos" executed="True" result="Success" success="True" time="9.592" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.gRegistrarDatosInvalidos.TheRegistrarDatosInvalidosTest" executed="True" result="Success" success="True" time="9.590" asserts="5" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="hRegistrarCorrecto" executed="True" result="Success" success="True" time="8.960" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.hRegistrarCorrecto.TheRegistrarCorrectoTest" executed="True" result="Success" success="True" time="8.956" asserts="5" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="jEditarCancelar" executed="True" result="Failure" success="False" time="7.752" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.jEditarCancelar.TheEditarCancelarTest" executed="True" result="Error" success="False" time="7.750" asserts="2">
+                <failure>
+                  <message><![CDATA[Selenium.SeleniumException : ERROR: Element //a[contains(@href, '/Home/EditarCliente?ClienteId=128')] not found]]></message>
+                  <stack-trace><![CDATA[at Selenium.HttpCommandProcessor.DoCommand(String command, String[] args) in c:\Projects\webdriver\dotnet\src\core\HttpCommandProcessor.cs:line 92
+at MantenimientoClienteSeleniumRC.jEditarCancelar.TheEditarCancelarTest() in c:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\MantenimientoClienteSRC.cs:line 417
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="kEditarCampoInvalido" executed="True" result="Failure" success="False" time="7.629" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.kEditarCampoInvalido.TheEditarCampoInvalidoTest" executed="True" result="Error" success="False" time="7.626" asserts="3">
+                <failure>
+                  <message><![CDATA[Selenium.SeleniumException : ERROR: Element //a[contains(@href, '/Home/EditarCliente?ClienteId=128')] not found]]></message>
+                  <stack-trace><![CDATA[at Selenium.HttpCommandProcessor.DoCommand(String command, String[] args) in c:\Projects\webdriver\dotnet\src\core\HttpCommandProcessor.cs:line 92
+at MantenimientoClienteSeleniumRC.kEditarCampoInvalido.TheEditarCampoInvalidoTest() in c:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\MantenimientoClienteSRC.cs:line 463
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="lEditarCampoVacio" executed="True" result="Failure" success="False" time="7.972" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.lEditarCampoVacio.TheEditarCampoVacioTest" executed="True" result="Error" success="False" time="7.967" asserts="3">
+                <failure>
+                  <message><![CDATA[Selenium.SeleniumException : ERROR: Element //a[contains(@href, '/Home/EditarCliente?ClienteId=128')] not found]]></message>
+                  <stack-trace><![CDATA[at Selenium.HttpCommandProcessor.DoCommand(String command, String[] args) in c:\Projects\webdriver\dotnet\src\core\HttpCommandProcessor.cs:line 92
+at MantenimientoClienteSeleniumRC.lEditarCampoVacio.TheEditarCampoVacioTest() in c:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\MantenimientoClienteSRC.cs:line 510
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="mEditarCorrecto" executed="True" result="Failure" success="False" time="7.937" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.mEditarCorrecto.TheEditarCorrectoTest" executed="True" result="Error" success="False" time="7.933" asserts="3">
+                <failure>
+                  <message><![CDATA[Selenium.SeleniumException : ERROR: Element //a[contains(@href, '/Home/EditarCliente?ClienteId=128')] not found]]></message>
+                  <stack-trace><![CDATA[at Selenium.HttpCommandProcessor.DoCommand(String command, String[] args) in c:\Projects\webdriver\dotnet\src\core\HttpCommandProcessor.cs:line 92
+at MantenimientoClienteSeleniumRC.mEditarCorrecto.TheEditarCorrectoTest() in c:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\MantenimientoClienteSRC.cs:line 558
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="nEliminarCancelar" executed="True" result="Success" success="True" time="7.638" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.nEliminarCancelar.TheEliminarCancelarTest" executed="True" result="Success" success="True" time="7.636" asserts="5" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="oEliminarCorrecto" executed="True" result="Success" success="True" time="9.010" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.oEliminarCorrecto.TheEliminarCorrectoTest" executed="True" result="Success" success="True" time="9.007" asserts="5" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="pLogOut" executed="True" result="Success" success="True" time="7.665" asserts="0">
+            <results>
+              <test-case name="MantenimientoClienteSeleniumRC.pLogOut.TheLogOutTest" executed="True" result="Success" success="True" time="7.663" asserts="4" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

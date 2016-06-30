@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>pUnit</id>
+    <version>1.0.2</version>
+    <title>pUnit</title>
+    <authors>bbraithwaite</authors>
+    <owners>bbraithwaite</owners>
+    <projectUrl>https://github.com/bbraithwaite/punit</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple C# benchmarking framework. See https://github.com/bbraithwaite/pUnit for usage information and source code.</description>
+    <summary>A simple C# benchmarking framework</summary>
+    <releaseNotes>Created package.</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>benchmark profiler</tags>
+  </metadata>
+</package>

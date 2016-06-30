@@ -1,0 +1,12 @@
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\obj\Release\MantenimientoClienteSeleniumRC.csprojResolveAssemblyReference.cache
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\MantenimientoClienteSeleniumRC.dll
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\MantenimientoClienteSeleniumRC.pdb
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\nunit.framework.dll
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\pUnit.dll
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\ThoughtWorks.Selenium.Core.dll
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\WebDriver.dll
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\nunit.framework.xml
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\ThoughtWorks.Selenium.Core.xml
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\bin\Release\WebDriver.xml
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\obj\Release\MantenimientoClienteSeleniumRC.dll
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoClienteSeleniumRC\obj\Release\MantenimientoClienteSeleniumRC.pdb

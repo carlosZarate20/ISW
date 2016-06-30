@@ -13,7 +13,7 @@ namespace MantenimientoClienteTestPU
         private Cliente clienteTest;
 
         [TestMethod]
-        public void TestInsertarCliente()
+        public void TestInsertarClienteCorrecto()
         {
             Cliente cliente = new Cliente();
             cliente.Nombre = "ClienteInsertar";
@@ -26,31 +26,29 @@ namespace MantenimientoClienteTestPU
 
             ClienteBuss business = new ClienteBuss();
             clienteTest = business.Insertar(cliente);
+            business.Eliminar(cliente);
+            Assert.AreNotEqual(0, clienteTest);
+        }
+        [TestMethod]
+        public void TestInsertarClienteIncorrecto()
+        {
+            Cliente cliente = new Cliente();
+            cliente.Nombre = "ClienteInsertar";
+            cliente.Apellido = "ClienteApellidoa";
+            cliente.DNI = "1234588855";
+            cliente.Edad = 20;
+            cliente.Sexo = "Masculino";
+            cliente.Nivel_Estudio = "Universitario";
+            cliente.Telefono = "123458888";
+
+            ClienteBuss business = new ClienteBuss();
+            clienteTest = business.Insertar(cliente);
+            business.Eliminar(cliente);
             Assert.AreNotEqual(0, clienteTest);
         }
 
         [TestMethod]
-        public void TestListarCliente()
-        {
-            Cliente cliente = new Cliente();
-            List<Cliente> lista = null;
-            cliente.Nombre = "ClienteTestListar";
-            cliente.Apellido = "ClienteApellido";
-            cliente.DNI = "12345678";
-            cliente.Edad = 20;
-            cliente.Sexo = "Masculino";
-            cliente.Nivel_Estudio = "Universitario";
-            cliente.Telefono = "123456788";
-
-            ClienteBuss buss = new ClienteBuss();
-
-            clienteTest = buss.Insertar(cliente);
-            lista = buss.Listar();
-
-            Assert.IsNotNull(lista);
-        }
-        [TestMethod]
-        public void TestObtenerCliente()
+        public void TestObtenerClienteCorrecto()
         {
             Cliente cliente = new Cliente();
             cliente.Nombre = "ClienteTest";
@@ -63,15 +61,29 @@ namespace MantenimientoClienteTestPU
 
             Cliente obtener;
 
-            ClienteBuss buss = new ClienteBuss();
-            clienteTest = buss.Insertar(cliente);
-            obtener = buss.Obtener(clienteTest.ClienteId);
-
+            ClienteBuss business = new ClienteBuss();
+            clienteTest = business.Insertar(cliente);
+            obtener = business.Obtener(clienteTest.ClienteId);
+            business.Eliminar(cliente);
             Assert.IsNotNull(obtener);
-          
+
         }
         [TestMethod]
-        public void TestActualizarCliente()
+        public void TestObtenerClienteInorrecto()
+        {
+            Cliente cliente = new Cliente();
+
+            Cliente obtener;
+
+            ClienteBuss business = new ClienteBuss();
+            clienteTest = business.Insertar(cliente);
+            obtener = business.Obtener(clienteTest.ClienteId);
+            business.Eliminar(cliente);
+            Assert.IsNotNull(obtener);
+
+        }
+        [TestMethod]
+        public void TestActualizarClienteCorrecto()
         {
             Cliente cliente = new Cliente();
             cliente.Nombre = "ClienteTest";
@@ -91,16 +103,102 @@ namespace MantenimientoClienteTestPU
             cliente.Nombre = "TestActualizar2";
             business.Actualizar(cliente);
             obtener = business.Obtener(clienteTest.ClienteId);
-
+            business.Eliminar(cliente);
             Assert.AreEqual(cliente.Nombre, obtener.Nombre);
         }
         [TestMethod]
-        public void TestEliminarClienteCorrecto()
+        public void TestActualizarClienteInorrecto()
         {
+            Cliente cliente = new Cliente();
+            cliente.Nombre = "ClienteTest";
+            cliente.Apellido = "ClienteApellido";
+            cliente.DNI = "12345678";
+            cliente.Edad = 20;
+            cliente.Sexo = "Masculino";
+            cliente.Nivel_Estudio = "Universitario";
+            cliente.Telefono = "123456788";
 
+            Cliente obtener = new Cliente();
+
+            ClienteBuss business = new ClienteBuss();
+
+            clienteTest = business.Insertar(cliente);
+            cliente.ClienteId = clienteTest.ClienteId;
+            cliente.Nombre = "TestActualizar201222222222222222222222222222222222222222222222222222222222222";
+            business.Actualizar(cliente);
+            obtener = business.Obtener(clienteTest.ClienteId);
+            business.Eliminar(cliente);
+            Assert.AreEqual(cliente.Nombre, obtener.Nombre);
+        }
+
+        [TestMethod]
+        public void TestListarClienteCorrecto()
+        {
+            Cliente cliente = new Cliente();
+            List<Cliente> lista = null;
+            cliente.Nombre = "ClienteTestListar";
+            cliente.Apellido = "ClienteApellido";
+            cliente.DNI = "12345678";
+            cliente.Edad = 20;
+            cliente.Sexo = "Masculino";
+            cliente.Nivel_Estudio = "Universitario";
+            cliente.Telefono = "123456788";
+
+            ClienteBuss business = new ClienteBuss();
+
+            clienteTest = business.Insertar(cliente);
+            lista = business.Listar();
+            business.Eliminar(cliente);
+            Assert.IsNotNull(lista);
         }
         [TestMethod]
-        public void TestEliminarCliente()
+        public void TestListarClienteIncorrecto()
+        {
+            Cliente cliente = new Cliente();
+            List<Cliente> lista = null;
+            
+            ClienteBuss business = new ClienteBuss();
+
+            lista = business.Listar();
+            business.Eliminar(cliente);
+            Assert.IsNotNull(lista);
+        }
+       
+        [TestMethod]
+        public void TestBuscarClienteCorrecto()
+        {
+            Cliente cliente = new Cliente();
+            Cliente obtener;
+            cliente.Nombre = "ClienteInsertar";
+            cliente.Apellido = "ClienteApellidoa";
+            cliente.DNI = "12345888";
+            cliente.Edad = 21;
+            cliente.Sexo = "Masculino";
+            cliente.Nivel_Estudio = "Universitario";
+            cliente.Telefono = "123458888";
+            ClienteBuss business = new ClienteBuss();
+
+            clienteTest = business.Insertar(cliente);
+            obtener = business.Buscar(clienteTest);
+            business.Eliminar(cliente);
+            Assert.IsNotNull(obtener);
+        }
+        [TestMethod]
+        public void TestBuscarClienteIncorrecto()
+        {
+            Cliente cliente = new Cliente();
+            Cliente obtener;
+            
+            ClienteBuss business = new ClienteBuss();
+
+            clienteTest = business.Insertar(cliente);
+            obtener = business.Buscar(clienteTest);
+            business.Eliminar(cliente);
+            Assert.IsNotNull(obtener);
+        }
+       
+        [TestMethod]
+        public void TestEliminarClienteCorrecto()
         {
             Cliente cliente = new Cliente();
             cliente.Nombre = "ClienteTestEliminar";
@@ -120,49 +218,34 @@ namespace MantenimientoClienteTestPU
             clienteTest.ClienteId = 0;
             Assert.IsNull(obtener);
         }
-
-       
-
         [TestMethod]
-        public void TestBuscarCliente()
+        public void TestEliminarClienteIncorrecto()
         {
             Cliente cliente = new Cliente();
-            Cliente obtener;
-            cliente.Nombre = "ClienteInsertar";
-            cliente.Apellido = "ClienteApellidoa";
-            cliente.DNI = "12345888";
-            cliente.Edad = 21;
+            cliente.Nombre = "ClienteTestEliminar";
+            cliente.Apellido = "ClienteApellido";
+            cliente.DNI = "12345688";
+            cliente.Edad = 20;
             cliente.Sexo = "Masculino";
             cliente.Nivel_Estudio = "Universitario";
-            cliente.Telefono = "123458888";
+            cliente.Telefono = "123456888";
+
+            Cliente obtener = new Cliente();
+
             ClienteBuss business = new ClienteBuss();
-
             clienteTest = business.Insertar(cliente);
-
-            obtener = business.Buscar(clienteTest);
-            Assert.IsNotNull(obtener);
+            obtener = business.Obtener(clienteTest.ClienteId);
+            clienteTest.ClienteId = 0;
+            Assert.IsNull(obtener);
         }
 
-        //[TestCleanup]
-        //public void Cleanup()
-        //{
-        //    if (clienteTest.ClienteId != 0)
-        //    {
-        //        ClienteBuss businessCliente = new ClienteBuss();
-          
-        //        Cliente cliente;
-              
-
-        //        cliente = businessCliente.Obtener(clienteTest.ClienteId);
-        //        businessCliente.Eliminar(cliente);
-             
-
-        //    }
-        //    clienteTest.ClienteId = 0;
-            
-        //}
 
 
      
+
+       
+
+
+
     }
 }

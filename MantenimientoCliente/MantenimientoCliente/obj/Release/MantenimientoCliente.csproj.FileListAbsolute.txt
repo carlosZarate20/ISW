@@ -363,6 +363,6 @@ C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\bin\e
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\bin\es\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\obj\Release\MantenimientoCliente.csprojResolveAssemblyReference.cache
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\obj\Release\MantenimientoCliente.dll
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\obj\Release\MantenimientoCliente.pdb
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\MantenimientoCliente\obj\Release\MantenimientoCliente.csprojResolveAssemblyReference.cache

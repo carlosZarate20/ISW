@@ -141,3 +141,5 @@ C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\Nunit\bin\Release\es\Micro
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\Nunit\obj\Release\Nunit.csprojResolveAssemblyReference.cache
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\Nunit\obj\Release\Nunit.dll
 C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\Nunit\obj\Release\Nunit.pdb
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\Nunit\bin\Release\Nunit.dll.CodeAnalysisLog.xml
+C:\Users\operador\Desktop\Lab C#\MantenimientoCliente\Nunit\bin\Release\Nunit.dll.lastcodeanalysissucceeded

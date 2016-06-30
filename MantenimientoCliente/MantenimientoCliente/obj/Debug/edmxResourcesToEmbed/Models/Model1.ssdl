@@ -13,19 +13,7 @@
     <Property Name="Nivel_Estudio" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Telefono" Type="varchar" MaxLength="10" Nullable="false" />
   </EntityType>
-  <EntityType Name="Usuario">
-    <Key>
-      <PropertyRef Name="UsuarioId" />
-    </Key>
-    <Property Name="UsuarioId" Type="int" Nullable="false" />
-    <Property Name="Codigo" Type="varchar" MaxLength="25" Nullable="false" />
-    <Property Name="Contraseña" Type="varchar" MaxLength="25" Nullable="false" />
-    <Property Name="Nombre" Type="varchar" MaxLength="25" Nullable="false" />
-    <Property Name="Apellido" Type="varchar" MaxLength="25" Nullable="false" />
-    <Property Name="Rol" Type="varchar" MaxLength="3" Nullable="false" />
-  </EntityType>
   <EntityContainer Name="MantenimientoClienteModelStoreContainer">
     <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>
